@@ -1,0 +1,248 @@
+/* Task List Page Styles */
+.task-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  width: 100%;
+}
+
+.task-appbar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.task-appbar .MuiToolbar-root {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.task-appbar-title {
+  flex-grow: 1;
+  font-weight: 600;
+}
+
+.task-container {
+  padding: 32px;
+  max-width: 1400px;
+  width: calc(100% - 20%) !important;
+  margin: 0 auto;
+}
+
+.task-header {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.task-header-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.task-header-title {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.task-header-count {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+}
+
+.task-add-button {
+  padding: 12px 24px;
+  font-weight: 600;
+  text-transform: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.task-add-button:hover {
+  background: linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%);
+}
+
+.task-empty-card {
+  padding: 48px 32px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.task-empty-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.task-empty-text {
+  margin-bottom: 24px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.task-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s;
+  border-left: 4px solid #667eea;
+}
+
+.task-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.task-card-content {
+  padding: 24px !important;
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.task-card-title {
+  flex: 1;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.task-card-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.task-icon-button {
+  transition: transform 0.2s;
+}
+
+.task-icon-button:hover {
+  transform: scale(1.1);
+}
+
+.task-description {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.task-chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.task-chip {
+  font-weight: 500;
+}
+
+.task-timestamps {
+  margin-top: 8px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.task-timestamp {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Dialog Styles */
+.task-dialog-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+}
+
+.task-dialog-content {
+  padding-top: 24px !important;
+}
+
+.task-dialog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-dialog-actions {
+  padding: 16px 24px;
+}
+
+.task-dialog-button {
+  font-weight: 600;
+  text-transform: none;
+  padding: 8px 24px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .task-container {
+    padding: 32px;
+  }
+
+  .task-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .task-header-info {
+    min-width: auto;
+  }
+
+  .task-add-button {
+    width: 100%;
+  }
+
+  .task-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-card-actions {
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+
+  .task-timestamps {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .task-card-content {
+    padding: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-container {
+    padding: 32px;
+  }
+
+  .task-header-title {
+    font-size: 1.75rem;
+  }
+
+  .task-card-title {
+    font-size: 1.1rem;
+  }
+
+  .task-appbar-title {
+    font-size: 1.1rem;
+  }
+
+  .task-empty-card {
+    padding: 32px 16px;
+  }
+}

@@ -1,0 +1,141 @@
+/* Common Component Styles */
+
+/* Global Overrides */
+.MuiContainer-root {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Error Boundary */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 32px;
+  text-align: center;
+}
+
+.error-title {
+  margin-bottom: 16px;
+  color: #d32f2f;
+}
+
+.error-message {
+  margin-bottom: 32px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Common Animations */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Common Utilities */
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive Utilities */
+@media (max-width: 1200px) {
+  .container-large {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-large {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-large {
+    max-width: 100%;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hide-small-mobile {
+    display: none !important;
+  }
+
+  h1, .MuiTypography-h1 {
+    font-size: 2rem !important;
+  }
+
+  h2, .MuiTypography-h2 {
+    font-size: 1.75rem !important;
+  }
+
+  h3, .MuiTypography-h3 {
+    font-size: 1.5rem !important;
+  }
+
+  h4, .MuiTypography-h4 {
+    font-size: 1.25rem !important;
+  }
+}

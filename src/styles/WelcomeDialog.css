@@ -1,0 +1,33 @@
+.welcome-dialog-title {
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.welcome-dialog-content {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.welcome-dialog-list {
+  padding-left: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.welcome-dialog-list-item {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.welcome-dialog-actions {
+  padding: 16px;
+  gap: 8px;
+}
